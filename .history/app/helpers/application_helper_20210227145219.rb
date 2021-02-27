@@ -8,7 +8,7 @@ module ApplicationHelper
 
   def markdown_to_html(text)
     # Kramdown::Document.new(text, input: "GFM").to_html
-    Kramdown::Document.new(text).to_html
+    document = Kramdown::Document.new(document, options)
   end
 
   def trade_author(trade)
